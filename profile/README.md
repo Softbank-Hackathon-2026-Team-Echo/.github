@@ -59,7 +59,8 @@ EchoPortは、AWS・GCP・オンプレミスのクラスターを一つの画面
 ## システムアーキテクチャ
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/architecture.ja.svg" width="100%" alt="EchoPort システム構成: Cloudflare、GCP ネットワーク LB、Envoy エントリ、AWS 東京、GCP ソウル、オンプレミス、PostgreSQL レプリケーション、ソウルの管理プレーン" />
+  <img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/architecture-final.png" width="100%" alt="EchoPort 本選の構成: Cloudflare LB → GCP ネットワーク LB → Envoy a(サービスごとのホスト)→ AWS 東京 EKS · GCP ソウル顧客 GKE · オンプレミス MacBook(M5)キット、管理プレーン(WAS · 管理 DB)と AI サンドボックスはソウル" />
+  <br/><sub>本選(11/8)時点の構成です。エントリは Envoy a の1台、オンプレミスは MacBook(M5)の k3s キットです。</sub>
 </p>
 
 システムは、利用者のリクエストが通るデータプレーンと、それを動かす管理プレーンに分かれています。
@@ -388,7 +389,8 @@ EchoPort는 AWS · GCP · 온프레미스 클러스터를 한 화면에서 관�
 ## 시스템 아키텍처
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/architecture.svg" width="100%" alt="EchoPort 시스템 구성: Cloudflare, GCP 네트워크 LB, Envoy 진입점, AWS 도쿄, GCP 서울, 온프레미스, PostgreSQL 복제, 서울의 관리 평면" />
+  <img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/architecture-final.png" width="100%" alt="EchoPort 본선 구성: Cloudflare LB → GCP 네트워크 LB → Envoy a(서비스별 호스트) → AWS 도쿄 EKS · GCP 서울 고객 GKE · 온프레미스 맥북(M5) 키트, 관리 평면(WAS · 관제 DB)과 AI 샌드박스는 서울" />
+  <br/><sub>본선(11/8) 기준 구성이에요. 진입점은 Envoy a 한 대, 온프레미스는 맥북(M5)의 k3s 키트예요.</sub>
 </p>
 
 시스템은 사용자 요청이 지나가는 데이터 평면과, 그것을 움직이는 관리 평면으로 나뉘어요.
