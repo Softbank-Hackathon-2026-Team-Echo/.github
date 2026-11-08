@@ -1,14 +1,33 @@
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/award/award.png" width="100%" alt="SoftBank Hackathon 2026 in Korea 本選 優秀賞 / 본선 우수상 — Team Echo" />
+
 <img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/banner.ja.png" width="100%" alt="EchoPort: Beyond Lock-In. クラウド間を、なめらかに。" />
 
 [app.echoport.uk](https://app.echoport.uk) · [API ドキュメント](https://api.echoport.uk/docs)
 
-<sub>Team Echo · SoftBank Hackathon 2026 in Korea 本選 · 한국어는 페이지 맨 아래에 있어요</sub>
+<sub>Team Echo · SoftBank Hackathon 2026 in Korea 本選 優秀賞 🏆 · 한국어는 페이지 맨 아래에 있어요</sub>
 
 </div>
 
 ---
+
+## 🏆 本選 優秀賞
+
+SoftBank Hackathon 2026 in Korea の本選(2026.11.08)で、EchoPort は優秀賞を受賞しました。本選では、スライドを使わずに実際の運用環境で次の4つの場面をデモしました。
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/award/demo-situations.png" width="900" alt="1つの移行手順で、平常時・災害警報・災害発生の3つの状況に対応する" />
+</p>
+
+| 順番 | 場面 | 見せたこと |
+|---|---|---|
+| ① | AI 修正の承認 | デプロイ失敗を、AI が隔離サンドボックスで診断して1行の修正案を作成。人が承認して初めて再デプロイ |
+| ② | セキュリティ · ガバナンス | 3環境 × 4欄のマトリクスで未確認0。FAIL は隠さず期限付きの例外で管理し、監査ログに記録 |
+| ③ | 地震 → クラウド間移行 · 復帰 | スマートフォンを振って地震警報(模擬)→ DB を含めて東京 → ソウルへ移行し、災害終了後に同じ手順で復帰 |
+| ④ | 回線断 → オンプレミス → クラウド → 復帰 | オンプレミス役の MacBook のケーブルを抜くとクラウドが引き継ぎ、挿し直すと人の操作なしで MacBook に戻る |
+
+<sub>地震警報は模擬で、その後の移行は実際の運用環境です。前日のリハーサル実測: ③ 移行 約52秒(書き込み停止 10秒前後、書き込み失敗0)、④ 切り替え 約19秒。</sub>
 
 ## EchoPortとは
 
@@ -246,16 +265,23 @@ flowchart TB
 
 <table>
 <tr>
-<td width="50%"><img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/screens/landing.png" alt="EchoPort の紹介画面" /><br/><sub>紹介: 地球儀の上に環境を表示します</sub></td>
-<td width="50%"><img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/screens/overview.png" alt="サービス概要の画面: 指標とトポロジー" /><br/><sub>サービス概要: 指標と環境ごとのトラフィック</sub></td>
+<td width="50%"><img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/screens/landing.png" alt="紹介: 地球儀の上に環境を表示します" /><br/><sub>紹介: 地球儀の上に環境を表示します</sub></td>
+<td width="50%"><img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/screens/landing-flow.png" alt="紹介: 検知 → 選択 → 試験 → 移行の4段階" /><br/><sub>紹介: 検知 → 選択 → 試験 → 移行の4段階</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/screens/migration.png" alt="移行結果の画面" /><br/><sub>移行結果: 段階ごとの判定と RTO</sub></td>
-<td width="50%"><img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/screens/security.png" alt="セキュリティマトリクスの画面" /><br/><sub>セキュリティマトリクス: 環境ごとの判定と証拠</sub></td>
+<td width="50%"><img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/screens/landing-regions.png" alt="紹介: すべてのリージョンを一つの画面で" /><br/><sub>紹介: すべてのリージョンを一つの画面で</sub></td>
+<td width="50%"><img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/screens/landing-features.png" alt="紹介: DB 切り替え · AI 事前点検 · どこでも同じセキュリティ" /><br/><sub>紹介: DB 切り替え · AI 事前点検 · どこでも同じセキュリティ</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/screens/overview.png" alt="サービス概要: 指標と環境ごとのトラフィック" /><br/><sub>サービス概要: 指標と環境ごとのトラフィック</sub></td>
+<td width="50%"><img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/screens/migration.png" alt="移行結果: 段階ごとの判定と RTO" /><br/><sub>移行結果: 段階ごとの判定と RTO</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/screens/security.png" alt="セキュリティマトリクス: 環境ごとの判定と証拠" /><br/><sub>セキュリティマトリクス: 環境ごとの判定と証拠</sub></td>
 </tr>
 </table>
 
-<sub>運用環境の画面です。サービスのアドレスの一部を隠しています。</sub>
+<sub>紹介ページの図は例示です。サービス概要 · 移行結果 · セキュリティは運用環境の画面(11/7)で、サービスのアドレスの一部を隠しています。</sub>
 
 ## デザイン
 
@@ -316,7 +342,26 @@ flowchart TB
 <details>
 <summary><h2>한국어</h2></summary>
 
+<img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/award/award.png" width="100%" alt="SoftBank Hackathon 2026 in Korea 本選 優秀賞 / 본선 우수상 — Team Echo" />
+
 <img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/banner.png" width="100%" alt="EchoPort: Beyond Lock-In. 어떤 클라우드든, 막힘없이." />
+
+## 🏆 본선 우수상
+
+SoftBank Hackathon 2026 in Korea 본선(2026.11.08)에서 EchoPort가 우수상을 받았어요. 본선에서는 슬라이드 없이 실제 운영 환경으로 네 장면을 시연했어요.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/award/demo-situations.png" width="900" alt="하나의 이전 절차로 평상시 · 재난 경보 · 재난 발생 세 상황을 다룬다" />
+</p>
+
+| 순서 | 장면 | 보여 준 것 |
+|---|---|---|
+| ① | AI 수정 승인 | 배포 실패를 AI가 격리 샌드박스에서 진단하고 한 줄 수정안을 만듦. 사람이 승인해야만 재배포 |
+| ② | 보안 · 거버넌스 | 3개 환경 × 4칸 매트릭스, 확인 안 된 칸 0. FAIL은 숨기지 않고 기한 있는 예외로 관리하고 감사 로그에 기록 |
+| ③ | 지진 → 클라우드 간 이전 · 복귀 | 휴대폰을 흔들어 지진 경보(모의) → DB까지 포함해 도쿄 → 서울로 이전, 재난이 끝나면 같은 절차로 복귀 |
+| ④ | 회선 끊김 → 온프레 → 클라우드 → 복귀 | 온프레 역할의 맥북 케이블을 뽑으면 클라우드가 이어받고, 다시 꽂으면 사람 손 없이 맥북으로 복귀 |
+
+<sub>지진 경보는 모의이고, 이후 이전은 실제 운영 환경이에요. 전날 리허설 실측: ③ 이전 약 52초(쓰기 정지 10초 안팎, 쓰기 실패 0), ④ 전환 약 19초.</sub>
 
 ## EchoPort란
 
@@ -549,16 +594,23 @@ flowchart TB
 
 <table>
 <tr>
-<td width="50%"><img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/screens/landing.png" alt="EchoPort 소개 화면" /><br/><sub>소개: 지구본 위에 환경을 보여 줘요</sub></td>
-<td width="50%"><img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/screens/overview.png" alt="서비스 개요 화면: 지표와 토폴로지" /><br/><sub>서비스 개요: 지표와 환경별 트래픽</sub></td>
+<td width="50%"><img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/screens/landing.png" alt="소개: 지구본 위에 환경을 보여 줘요" /><br/><sub>소개: 지구본 위에 환경을 보여 줘요</sub></td>
+<td width="50%"><img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/screens/landing-flow.png" alt="소개: 감지 → 선택 → 시험 → 이전 4단계" /><br/><sub>소개: 감지 → 선택 → 시험 → 이전 4단계</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/screens/migration.png" alt="이전 결과 화면" /><br/><sub>이전 결과: 단계별 판정과 RTO</sub></td>
-<td width="50%"><img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/screens/security.png" alt="보안 매트릭스 화면" /><br/><sub>보안 매트릭스: 환경별 판정과 증거</sub></td>
+<td width="50%"><img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/screens/landing-regions.png" alt="소개: 모든 리전을 한 화면에서" /><br/><sub>소개: 모든 리전을 한 화면에서</sub></td>
+<td width="50%"><img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/screens/landing-features.png" alt="소개: DB 전환 · AI 사전 점검 · 어디서나 같은 보안" /><br/><sub>소개: DB 전환 · AI 사전 점검 · 어디서나 같은 보안</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/screens/overview.png" alt="서비스 개요: 지표와 환경별 트래픽" /><br/><sub>서비스 개요: 지표와 환경별 트래픽</sub></td>
+<td width="50%"><img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/screens/migration.png" alt="이전 결과: 단계별 판정과 RTO" /><br/><sub>이전 결과: 단계별 판정과 RTO</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/screens/security.png" alt="보안 매트릭스: 환경별 판정과 증거" /><br/><sub>보안 매트릭스: 환경별 판정과 증거</sub></td>
 </tr>
 </table>
 
-<sub>운영 화면이에요. 서비스 주소 일부는 가렸어요.</sub>
+<sub>소개 페이지 그림은 예시예요. 서비스 개요 · 이전 결과 · 보안은 운영 화면(11/7)이고, 서비스 주소 일부는 가렸어요.</sub>
 
 ## 디자인
 
