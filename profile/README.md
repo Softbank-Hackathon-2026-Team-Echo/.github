@@ -4,7 +4,8 @@
 
 <img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/banner.ja.png" width="100%" alt="EchoPort: Beyond Lock-In. クラウド間を、なめらかに。" />
 
-[app.echoport.uk](https://app.echoport.uk) · [API ドキュメント](https://api.echoport.uk/docs)
+🛑 **デモサービス(app.echoport.uk · api.echoport.uk)は本選終了後に停止しました。** コードと資料はこの組織のリポジトリで公開しています。<br/>
+<sub>🛑 The demo service was shut down after the finals; the code and docs remain in this organization.</sub>
 
 <sub>Team Echo · SoftBank Hackathon 2026 in Korea 本選 優秀賞 🏆 · 한국어는 페이지 맨 아래에 있어요</sub>
 
@@ -346,6 +347,8 @@ flowchart TB
 <img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/award/award.png" width="100%" alt="SoftBank Hackathon 2026 in Korea 本選 優秀賞 / 본선 우수상 — Team Echo" />
 
 <img src="https://raw.githubusercontent.com/Softbank-Hackathon-2026-Team-Echo/.github/main/profile/assets/banner.png" width="100%" alt="EchoPort: Beyond Lock-In. 어떤 클라우드든, 막힘없이." />
+
+🛑 **데모 서비스(app.echoport.uk · api.echoport.uk)는 본선이 끝난 뒤 내렸어요.** 코드와 문서는 이 조직의 저장소에 그대로 공개돼 있어요.
 
 ## 🏆 본선 우수상
 
